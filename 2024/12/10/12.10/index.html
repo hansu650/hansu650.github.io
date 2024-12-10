@@ -205,14 +205,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 7, 2024&nbsp;&nbsp;21:50:34</a>
+                        Date: <a href="#">December 10, 2024&nbsp;&nbsp;20:50:32</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/12-week1/">12-week1</a>
+                                <a href="/categories/12-week2/">12-week2</a>
                             
                         </span>
                     
@@ -221,155 +221,100 @@
         </header>
 
         <div class="post-content">
-            <h3 id="1-数学"><a href="#1-数学" class="headerlink" title="1. 数学"></a>1. 数学</h3><h4 id="无穷函数的反常积分-瑕积分"><a href="#无穷函数的反常积分-瑕积分" class="headerlink" title="无穷函数的反常积分-瑕积分"></a>无穷函数的反常积分-瑕积分</h4><p>1.<strong>瑕点是端点</strong></p>
+            <h3 id="1-数学"><a href="#1-数学" class="headerlink" title="1. 数学"></a>1. 数学</h3><h4 id="定积分的应用-求面积"><a href="#定积分的应用-求面积" class="headerlink" title="定积分的应用-求面积"></a>定积分的应用-求面积</h4><p>1.<strong>步骤</strong></p>
 <ul>
-<li>端点处取极限</li>
-</ul>
-<p>2.<strong>瑕点在中间</strong></p>
-<ul>
-<li>瑕点处分成两个积分用1</li>
-</ul>
-<p>3.<strong>反常积分</strong></p>
-<ul>
-<li>取极限用牛奶公式</li>
-</ul>
-<h4 id="定积分应用"><a href="#定积分应用" class="headerlink" title="定积分应用"></a>定积分应用</h4><p>1.<strong>面积</strong></p>
-<ul>
-<li>优先x型后y型</li>
-<li>平着边缘垂直于啥轴就啥型</li>
-<li>也有2者结合用</li>
-</ul>
-<p>2.<strong>x型</strong></p>
-<ul>
-<li>上-下函数</li>
-</ul>
-<p>3.<strong>y型</strong></p>
-<ul>
-<li>右-左函数</li>
-</ul>
-<h4 id="定积分计算技巧"><a href="#定积分计算技巧" class="headerlink" title="定积分计算技巧"></a>定积分计算技巧</h4><p>1.<strong>直接平移</strong></p>
-<ul>
-<li>上下限-c函数+c</li>
-<li>fx-f-x是奇，ln1+x-ln1-x；fx+f-x是偶</li>
-<li>对称区间通用公式a<del>-afx&#x3D;a</del>0fx+f-x</li>
-</ul>
-<p>2.<strong>几何意义</strong></p>
-<ul>
-<li>2ax-x方-&gt;(x-a)方+y方&#x3D;a方</li>
-<li>|x|</li>
-</ul>
-<p>3.<strong>公式</strong></p>
-<ul>
-<li>arctanex+arctane-x&#x3D;派&#x2F;2-&gt;用导数为0+取x&#x3D;0</li>
-</ul>
-<p>3.<strong>技巧</strong></p>
-<ul>
-<li>复杂三角换元画图</li>
-</ul>
-<p>3.<strong>分部积分表格法</strong></p>
-<ul>
-<li>上面导:反arc对ln幂方</li>
-<li>下面积:三sin指ex</li>
-<li>斜线+-交替</li>
-<li>导为0或出现循环停止，停止时最后一项竖着*</li>
+<li>画草图</li>
+<li>firstly，方程+leads to 交点</li>
+<li>secondly，integrating with respect to x&#x2F;y</li>
 </ul>
 <hr>
-<h3 id="2-编程"><a href="#2-编程" class="headerlink" title="2. 编程"></a>2. 编程</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>1.<strong>range(start,end,step)</strong></p>
+<h3 id="2-编程"><a href="#2-编程" class="headerlink" title="2. 编程"></a>2. 编程</h3><h4 id="datetime库（常考-必考）"><a href="#datetime库（常考-必考）" class="headerlink" title="datetime库（常考~必考）"></a>datetime库（常考~必考）</h4><p>1.<strong>datetime.datetime</strong></p>
 <ul>
-<li>[默认0,只写一个是end)默认1</li>
-</ul>
-<p>2.<strong>添加</strong></p>
-<ul>
-<li>单个 append(value…)</li>
-<li>多个 extend([value,value…])</li>
-</ul>
-<p>3.<strong>插入</strong></p>
-<ul>
-<li>insert(value…)</li>
-<li>index(索引,value)</li>
-</ul>
-<p>4.<strong>删除</strong></p>
-<ul>
-<li>del list[索引]  python自带方法</li>
-<li>list.pop(索引)  list的方法,返回删除值</li>
-<li>list.remove(value)  list的方法</li>
-</ul>
-<p>5.<strong>其他</strong></p>
-<ul>
-<li>len(list)  长度</li>
-<li>list.count(value) value出现几次</li>
-<li>list.reverse() 返回值none，原地转</li>
-<li>list.clear()</li>
-</ul>
-<p>6.<strong>进阶</strong></p>
-<ul>
-<li><p><strong>枚举</strong>enumerate(iterable,start&#x3D;0)</p>
-</li>
-<li><p>for里面用，返回索引+value</p>
-</li>
-<li><p><strong>解析式</strong>[expression <strong>for</strong> item <strong>in</strong> iterable]</p>
-</li>
-<li><p>expression：对每个元素执行的操作，可以是任何合法的表达式，最后存入表 中</p>
-</li>
-<li><p>item：可迭代对象中的当前元素。</p>
-</li>
-<li><p>iterable：要遍历的可迭代对象（例如列表、元组、字符串等）</p>
-</li>
-<li><p>对于简单的列表操作，列表解析式是非常简洁和高效的，但对于复杂操作，还是推荐使用传统的 for 循环</p>
-</li>
-<li><p>d&#x3D;[x**2 for x in range(11)]</p>
-</li>
-<li><p><strong>切片</strong>list[start:end:step]</p>
-</li>
-<li><pre><code>         [  )     一个冒号只有start和end
+<li>构造一个日期时间对象</li>
+<li>from datetime import datetime</li>
+<li><pre><code> dt = datetime(2024, 12, 10, 12, 30, 0)
 </code></pre>
 </li>
-<li><p>start：切片的起始索引（包含）。如果省略，默认为 0。</p>
-</li>
-<li><p>end：切片的结束索引（不包含）。如果省略，默认为列表的长度。</p>
-</li>
-<li><p>step：步长，表示切片中元素的间隔。如果省略，默认为 1。</p>
-</li>
-<li><p><strong>复制</strong> </p>
-</li>
-<li><p>直接a&#x3D;b只是head链接改b会改a</p>
-</li>
-<li><p>list.copy()返回列表复制</p>
-</li>
-<li><p>b&#x3D;a[:]表示a从头到尾切一边给b</p>
+<li><pre><code> print(dt)
+</code></pre>
 </li>
 </ul>
-<h5 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h5><p>7.<strong>方法</strong></p>
+<p>2.<strong>datetime.timedelta</strong></p>
 <ul>
-<li>内置sum等</li>
-<li>解析式</li>
-<li>切片</li>
-<li>复制</li>
+<li>表示两个日期时间的时间差</li>
+<li>delta-间隔</li>
+<li>td1 &#x3D; timedelta(days &#x3D; 1)</li>
+<li>td2 &#x3D; timedelta(hours &#x3D; 2, minutes &#x3D; 30)</li>
 </ul>
-<h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><p>1.<strong>似列表</strong></p>
+<p>3.<strong>dt.strftime</strong></p>
 <ul>
-<li>()</li>
-<li>不能修改里面元素</li>
+<li>格式化日期格式</li>
+<li>dt是一个日期时间的对象</li>
+<li>dt &#x3D; datetime.now()</li>
+<li>formatted_date &#x3D; dt.strftime(‘%Y-%m-%d %H:%M:%S’)</li>
+<li>%Y表示4位年份，其余都为2位，%m表示月份（01 - 12），%d表示日（01 - 31），%H表示 24 小时制- 的小时（00 - 23），%M表示分钟（00 - 59），%S表示秒（00 - 59）</li>
+</ul>
+<p>4.<strong>dt.total_seconds</strong></p>
+<ul>
+<li>timedelta类里的方法</li>
+<li>返回时间间隔对象所表示的总秒数 </li>
+<li>from datetime import timedelta</li>
+<li>td &#x3D; timedelta(days &#x3D; 1, hours &#x3D; 2, minutes &#x3D; 30)</li>
+<li>total_secs &#x3D; td.total_seconds()</li>
+<li>print(total_secs)</li>
+</ul>
+<h4 id="解题技巧"><a href="#解题技巧" class="headerlink" title="解题技巧"></a>解题技巧</h4><p>1.<strong>填空题</strong></p>
+<ul>
+<li>可以变成数学题</li>
+<li>先思考不要直接写</li>
+</ul>
+<p>2.<strong>解答题</strong></p>
+<ul>
+<li>不用全部写出来</li>
+<li>部分实例通过得部分分</li>
+<li>直接打印也有分</li>
+</ul>
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><p>1.<strong>传递</strong></p>
+<ul>
+<li>实际参数(传进来的)不改变：本身不可变的——字符串，数字，元组</li>
+<li>实际参数(传进来的)改变：本身可变的——列表，字典</li>
+<li>*不定长arg 类似解引用因为可以无限传，所以传进来的是可迭代对象-列表</li>
+<li>**不定长key 解两次因为有key，传进来字典</li>
+</ul>
+<h4 id="Math库"><a href="#Math库" class="headerlink" title="Math库"></a>Math库</h4><p>1.<strong>常量</strong></p>
+<ul>
+<li>math.e</li>
+<li>math.pi<br>2.<strong>函数</strong></li>
+<li>向上取整 math.ceil()</li>
+<li>向下取整 math.floor()</li>
+<li>阶乘 math.factorial()</li>
+<li>最大公约数 math.gcd()</li>
+</ul>
+<p>3.<strong>counter</strong></p>
+<ul>
+<li>在 Python 的collections模块中的Counter类</li>
+<li>含义：Counter是一个用于计数的容器类。它继承自dict类，主要用于统计可迭代对象中- 元素出现的次数。例如，对于一个包含多个单词的列表，可以使用Counter快速统计每个- 单词出现的频率。</li>
+<li>创建方式：</li>
+<li>可以直接从一个可迭代对象（如列表、元组、字符串等）创建Counter对象。</li>
+<li>python</li>
+<li><pre><code>from collections import Counter
+</code></pre>
+</li>
+<li><pre><code>my_list = [&#39;apple&#39;, &#39;banana&#39;, &#39;apple&#39;, &#39;cherry&#39;, &#39;banana&#39;, &#39;apple&#39;]
+</code></pre>
+</li>
+<li><pre><code>counter_obj = Counter(my_list)
+</code></pre>
+</li>
+<li><pre><code>print(counter_obj)
+</code></pre>
+</li>
+<li>输出为Counter({‘apple’: 3, ‘banana’: 2, ‘cherry’: 1})，可以看到它自动统计- 列表中每个元素出现的次数。</li>
 </ul>
 <hr>
-<h3 id="3-英语"><a href="#3-英语" class="headerlink" title="3.英语"></a>3.英语</h3><p>1.<strong>Without doubted</strong></p>
-<p>2.<strong>In contrast</strong></p>
-<p>3.<strong>表达认为</strong></p>
+<h3 id="3-英语"><a href="#3-英语" class="headerlink" title="3.英语"></a>3.英语</h3><p>1.<strong>nostalgia</strong></p>
 <ul>
-<li>believe</li>
-<li>consider</li>
-</ul>
-<p>4.<strong>perceive… as…</strong></p>
-<ul>
-<li>看作</li>
-</ul>
-<p>5.<strong>periodically</strong></p>
-<ul>
-<li>偶尔</li>
-</ul>
-<p>6.<strong>,a case in a point,</strong></p>
-<ul>
-<li>举个例子</li>
+<li>怀旧</li>
 </ul>
 
         </div>
@@ -385,7 +330,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2024/12/07/12.7/">http://example.com/2024/12/07/12.7/</a></span>
+                        <span><a href="http://example.com/2024/12/10/12.10/">http://example.com/2024/12/10/12.10/</a></span>
                     </p>
                 
                 
@@ -424,10 +369,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2024/12/10/12.10/">12.7</a>
             
-            
-            <a class="next" rel="next" href="/2024/12/06/12.6/">12.6</a>
+            <a class="next" rel="next" href="/2024/12/07/12.7/">12.7</a>
             
         </section>
 
