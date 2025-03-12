@@ -13,7 +13,7 @@
 
 
 
-<title>12.7 | Hexo</title>
+<title>12.11 | Hexo</title>
 
 
 
@@ -196,7 +196,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">12.7</h1>
+            <h1 class="post-title">12.11</h1>
             
                 <div class="post-meta">
                     
@@ -205,14 +205,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 7, 2024&nbsp;&nbsp;21:50:34</a>
+                        Date: <a href="#">December 10, 2024&nbsp;&nbsp;20:50:32</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/12-week1/">12-week1</a>
+                                <a href="/categories/12-week2/">12-week2</a>
                             
                         </span>
                     
@@ -221,157 +221,7 @@
         </header>
 
         <div class="post-content">
-            <h3 id="1-数学"><a href="#1-数学" class="headerlink" title="1. 数学"></a>1. 数学</h3><h4 id="无穷函数的反常积分-瑕积分"><a href="#无穷函数的反常积分-瑕积分" class="headerlink" title="无穷函数的反常积分-瑕积分"></a>无穷函数的反常积分-瑕积分</h4><p>1.<strong>瑕点是端点</strong></p>
-<ul>
-<li>端点处取极限</li>
-</ul>
-<p>2.<strong>瑕点在中间</strong></p>
-<ul>
-<li>瑕点处分成两个积分用1</li>
-</ul>
-<p>3.<strong>反常积分</strong></p>
-<ul>
-<li>取极限用牛奶公式</li>
-</ul>
-<h4 id="定积分应用"><a href="#定积分应用" class="headerlink" title="定积分应用"></a>定积分应用</h4><p>1.<strong>面积</strong></p>
-<ul>
-<li>优先x型后y型</li>
-<li>平着边缘垂直于啥轴就啥型</li>
-<li>也有2者结合用</li>
-</ul>
-<p>2.<strong>x型</strong></p>
-<ul>
-<li>上-下函数</li>
-</ul>
-<p>3.<strong>y型</strong></p>
-<ul>
-<li>右-左函数</li>
-</ul>
-<h4 id="定积分计算技巧"><a href="#定积分计算技巧" class="headerlink" title="定积分计算技巧"></a>定积分计算技巧</h4><p>1.<strong>直接平移</strong></p>
-<ul>
-<li>上下限-c函数+c</li>
-<li>fx-f-x是奇，ln1+x-ln1-x；fx+f-x是偶</li>
-<li>对称区间通用公式a<del>-afx&#x3D;a</del>0fx+f-x</li>
-</ul>
-<p>2.<strong>几何意义</strong></p>
-<ul>
-<li>2ax-x方-&gt;(x-a)方+y方&#x3D;a方</li>
-<li>|x|</li>
-</ul>
-<p>3.<strong>公式</strong></p>
-<ul>
-<li>arctanex+arctane-x&#x3D;派&#x2F;2-&gt;用导数为0+取x&#x3D;0</li>
-</ul>
-<p>3.<strong>技巧</strong></p>
-<ul>
-<li>复杂三角换元画图</li>
-</ul>
-<p>3.<strong>分部积分表格法</strong></p>
-<ul>
-<li>上面导:反arc对ln幂方</li>
-<li>下面积:三sin指ex</li>
-<li>斜线+-交替</li>
-<li>导为0或出现循环停止，停止时最后一项竖着*</li>
-</ul>
-<hr>
-<h3 id="2-编程"><a href="#2-编程" class="headerlink" title="2. 编程"></a>2. 编程</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>1.<strong>range(start,end,step)</strong></p>
-<ul>
-<li>[默认0,只写一个是end)默认1</li>
-</ul>
-<p>2.<strong>添加</strong></p>
-<ul>
-<li>单个 append(value…)</li>
-<li>多个 extend([value,value…])</li>
-</ul>
-<p>3.<strong>插入</strong></p>
-<ul>
-<li>insert(value…)</li>
-<li>index(索引,value)</li>
-</ul>
-<p>4.<strong>删除</strong></p>
-<ul>
-<li>del list[索引]  python自带方法</li>
-<li>list.pop(索引)  list的方法,返回删除值</li>
-<li>list.remove(value)  list的方法</li>
-</ul>
-<p>5.<strong>其他</strong></p>
-<ul>
-<li>len(list)  长度</li>
-<li>list.count(value) value出现几次</li>
-<li>list.reverse() 返回值none，原地转</li>
-<li>list.clear()</li>
-</ul>
-<p>6.<strong>进阶</strong></p>
-<ul>
-<li><p><strong>枚举</strong>enumerate(iterable,start&#x3D;0)</p>
-</li>
-<li><p>for里面用，返回索引+value</p>
-</li>
-<li><p><strong>解析式</strong>[expression <strong>for</strong> item <strong>in</strong> iterable]</p>
-</li>
-<li><p>expression：对每个元素执行的操作，可以是任何合法的表达式，最后存入表 中</p>
-</li>
-<li><p>item：可迭代对象中的当前元素。</p>
-</li>
-<li><p>iterable：要遍历的可迭代对象（例如列表、元组、字符串等）</p>
-</li>
-<li><p>对于简单的列表操作，列表解析式是非常简洁和高效的，但对于复杂操作，还是推荐使用传统的 for 循环</p>
-</li>
-<li><p>d&#x3D;[x**2 for x in range(11)]</p>
-</li>
-<li><p><strong>切片</strong>list[start:end:step]</p>
-</li>
-<li><pre><code>         [  )     一个冒号只有start和end
-</code></pre>
-</li>
-<li><p>start：切片的起始索引（包含）。如果省略，默认为 0。</p>
-</li>
-<li><p>end：切片的结束索引（不包含）。如果省略，默认为列表的长度。</p>
-</li>
-<li><p>step：步长，表示切片中元素的间隔。如果省略，默认为 1。</p>
-</li>
-<li><p><strong>复制</strong> </p>
-</li>
-<li><p>直接a&#x3D;b只是head链接改b会改a</p>
-</li>
-<li><p>list.copy()返回列表复制</p>
-</li>
-<li><p>b&#x3D;a[:]表示a从头到尾切一边给b</p>
-</li>
-</ul>
-<h5 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h5><p>7.<strong>方法</strong></p>
-<ul>
-<li>内置sum等</li>
-<li>解析式</li>
-<li>切片</li>
-<li>复制</li>
-</ul>
-<h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><p>1.<strong>似列表</strong></p>
-<ul>
-<li>()</li>
-<li>不能修改里面元素</li>
-</ul>
-<hr>
-<h3 id="3-英语"><a href="#3-英语" class="headerlink" title="3.英语"></a>3.英语</h3><p>1.<strong>Without doubted</strong></p>
-<p>2.<strong>In contrast</strong></p>
-<p>3.<strong>表达认为</strong></p>
-<ul>
-<li>believe</li>
-<li>consider</li>
-</ul>
-<p>4.<strong>perceive… as…</strong></p>
-<ul>
-<li>看作</li>
-</ul>
-<p>5.<strong>periodically</strong></p>
-<ul>
-<li>偶尔</li>
-</ul>
-<p>6.<strong>,a case in a point,</strong></p>
-<ul>
-<li>举个例子</li>
-</ul>
-
+            <h3 id="1-啦啦啦啦啦，我是测试3-12"><a href="#1-啦啦啦啦啦，我是测试3-12" class="headerlink" title="1.啦啦啦啦啦，我是测试3.12"></a>1.啦啦啦啦啦，我是测试3.12</h3>
         </div>
 
         
@@ -385,7 +235,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2024/12/07/12.7/">http://example.com/2024/12/07/12.7/</a></span>
+                        <span><a href="http://example.com/2024/12/10/12.11/">http://example.com/2024/12/10/12.11/</a></span>
                     </p>
                 
                 
@@ -424,10 +274,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2024/12/10/12.11/">12.11</a>
+                <a class="prev" rel="prev" href="/2024/12/10/12.10/">12.1</a>
             
             
-            <a class="next" rel="next" href="/2024/12/06/12.6/">12.6</a>
+            <a class="next" rel="next" href="/2024/12/07/12.7/">12.7</a>
             
         </section>
 
